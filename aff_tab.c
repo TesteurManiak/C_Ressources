@@ -1,12 +1,8 @@
 void	aff_tab(char **tab)
 {
-  int	i;
-
-  i = 0;
-  while (tab[i] != '\0')
-    {
-      my_putstr(tab[i]);
-      my_putchar('\n');
-      i++;
-    }
+  for (int i = 0; tab[i] != '\0'; i++)
+  {
+    my_putstr(tab[i]);
+    write(1, "\n", 1);
+  }
 }
